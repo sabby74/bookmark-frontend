@@ -1,4 +1,5 @@
 import { Form, Link, useLoaderData } from "react-router-dom";
+import React from "react";
 
 function Index(props) {
   const bookmark = useLoaderData();
@@ -22,6 +23,14 @@ function Index(props) {
             <Link>
               <h2>{book.url}</h2>
             </Link>
+            <Form action={`/delete/${book._id}`} method="post">
+          <button type="submit" value="Delete a Bookmark" >Delete Me!</button>
+        </Form>
+        <Link to={`/${book._id}/edit`}>
+          <button type='submit'>
+            Edit {book.title}
+          </button>
+        </Link>
           </div>
         ))}
       </div>
