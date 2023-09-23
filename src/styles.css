@@ -1,12 +1,45 @@
-nav{
-    background-color: pink ;
-    color: green ;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px ;
-    margin: 30px;
-    
+nav {
+  background-color: rgb(123, 133, 236);
+  color: rgb(3, 20, 87);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.container {
+  background-color: rgb(123, 133, 236);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 60%;
+  margin: 20px;
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 30px;
+}
+
+.create {
+  display: flex;
+  color: rgb(3, 20, 87);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(65, 133, 450);
+  border-radius: 10px;
 }
