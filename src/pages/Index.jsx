@@ -20,9 +20,10 @@ function Index(props) {
             <Link to={`/${book._id}`}>
               <h1>{book.title}</h1>
             </Link>
-            <Link>
-              <h2>{book.url}</h2>
-            </Link>
+            
+            <a href={book.url} target="_blank" rel="noopener noreferrer">
+        <h2>{book.url}</h2>
+      </a>            
             <Form action={`/delete/${book._id}`} method="post">
           <button type="submit" value="Delete a Bookmark" >Delete Me!</button>
         </Form>
